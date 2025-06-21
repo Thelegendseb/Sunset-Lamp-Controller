@@ -14,7 +14,10 @@ This app connects to compatible RGB sunset lamps and gives you full control over
 
 **You MUST disconnect the lamp from your phone's lamp app first.** BLE devices can typically only maintain one active connection at a time. If your phone is connected, this app won't be able to establish a connection. Also make sure its plugged in on the wall and the on button along the wire is correctly toggled.
 
-![Setup Image Placeholder - showing phone Bluetooth settings with the lamp disconnected]
+Here are the two UI styles of the mobile app showing where this toggle off is:
+![WhatsApp Image 2025-06-21 at 18 35 46_bbbb46dc](https://github.com/user-attachments/assets/e20b23cf-666c-486e-b090-3a29ff2e56f0)
+
+![WhatsApp Image 2025-06-21 at 18 35 46_22437d8b](https://github.com/user-attachments/assets/cfb1ad2d-af34-41e2-b12a-12d5e50384a9)
 
 ## How I Built This
 
