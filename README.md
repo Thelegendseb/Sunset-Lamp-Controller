@@ -58,6 +58,8 @@ RSSI stands for Received Signal Strength Indicator. It's a measurement of how st
 
 **[`app/gatt.py`](app/gatt.py)** - Once I had the device address, I needed to poke around and see what services and characteristics it had. Services and characteristics of BLE devices are like the organizational structure of BLE devices - services group related functionality together, and characteristics are the specific endpoints you can read from or write to.
 
+In BLE's, these are called "GATT". GATT stands for Generic Attribute Profile, and they provide a way for low energy bluetooth devices to list their services publicly.
+
 ```python
 async def main():
     print(f"Trying to connect to {ADDRESS}...")
@@ -72,7 +74,7 @@ async def main():
 
 This revealed the magic characteristic UUID (`0000ac52-1212-efde-1523-785fedbeda25`) that I needed to write to for controlling the light. I wasn't able to determine which service controlled sending colours to the lamp so I have the article linked at the bottom of this README to thank for that.
 
-### Step 3: The Hard Part - Cracking the Protocol
+### Step 3: The Hard Part - The Encryption Protocol
 
 **[`app/lightController.py`](app/lightController.py)** - This was where things got tricky. The device uses AES encryption and a specific payload format that I had to reverse engineer. 
 
