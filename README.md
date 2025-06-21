@@ -1,4 +1,4 @@
-# Smart Light Controller
+# 💡Sunset Lamp Controller
 
 A PyQt6 desktop app I built to control RGB sunset lamps via Bluetooth (BLE). I wanted to have a way to control the light from my computer and I couldn't find any online solutions so I made one!
 
