@@ -10,6 +10,12 @@ This app connects to compatible RGB sunset lamps and gives you full control over
 - **Screen Sync Mode**: Automatically matches your light to the average color of your screen
 - **Real-time Updates**: Continuously sends color data to keep your light perfectly synced
 
+## Demo Video
+
+https://github.com/user-attachments/assets/9b1e894c-96e0-4d7b-9ece-55152fd0f9d6
+
+
+
 ## Important Setup Note
 
 **You MUST disconnect the lamp from your phone's lamp app first.** BLE devices can typically only maintain one active connection at a time. If your phone is connected, this app won't be able to establish a connection. Also make sure its plugged in on the wall and the on button along the wire is correctly toggled.
@@ -174,6 +180,10 @@ pip install PyQt6 bleak numpy Pillow pycryptodome
 ```bash
 python app/app.py
 ```
+
+## Disclaimer
+
+Due to the way the lamp is physically built, multiple colours are shown despite the RGB Values sent. The resulting colour may not always look like what you selected, but its as close as I think is possible due to the physical limitations. The app is not broken, just a consideration of the functinoality of a sunset lamp. This is visibile during the screen sync part of the demo video.
 
 ## File Breakdown
 
