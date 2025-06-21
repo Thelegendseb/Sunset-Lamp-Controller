@@ -166,6 +166,9 @@ I developed this with the QuigoRGBIC Sunset Lamp (Model: SUNLAMP-P), but the pro
 ```bash
 pip install PyQt6 bleak numpy Pillow pycryptodome
 ```
+## Running the App (Forenote)
+
+Because im an unliscenced publisher of this app, windows will automatically flag this before you try to run it. You can bypass this by pressing "Run Anyway". I can't provide further proof that this app doesnt contain malicious content beyond the attached source code, so trust it if you like.
 
 ## Running the App
 
