@@ -15,9 +15,12 @@ This app connects to compatible RGB sunset lamps and gives you full control over
 **You MUST disconnect the lamp from your phone's lamp app first.** BLE devices can typically only maintain one active connection at a time. If your phone is connected, this app won't be able to establish a connection. Also make sure its plugged in on the wall and the on button along the wire is correctly toggled.
 
 Here are the two UI styles of the mobile app showing where this toggle off is:
-![WhatsApp Image 2025-06-21 at 18 35 46_bbbb46dc](https://github.com/user-attachments/assets/e20b23cf-666c-486e-b090-3a29ff2e56f0)
 
-![WhatsApp Image 2025-06-21 at 18 35 46_22437d8b](https://github.com/user-attachments/assets/cfb1ad2d-af34-41e2-b12a-12d5e50384a9)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e20b23cf-666c-486e-b090-3a29ff2e56f0" width="50%">
+  <img src="https://github.com/user-attachments/assets/cfb1ad2d-af34-41e2-b12a-12d5e50384a9" width="50%">
+</p>
+
 
 ## How I Built This
 
@@ -159,16 +162,17 @@ pip install PyQt6 bleak numpy Pillow pycryptodome
 ## Running the App
 
 1. Download the executable file from the release
-2. Run it!
+2. Run the executable
+3. Press "Connect"
 
 ## Running the App Via Python
 
 1. Disconnect your lamp from your phone's lamp app
 2. Update the `ADDRESS` in [`app/lightController.py`](app/lightController.py) if needed
-3. Run it:
+3. Run it via the command below
 
 ```bash
-python app.py
+python app/app.py
 ```
 
 ## File Breakdown
